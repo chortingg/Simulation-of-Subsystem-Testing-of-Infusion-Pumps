@@ -46,7 +46,7 @@ Items needed:
 
 17 LEDs
 
-18 Pressure sensor coupled with an LED (OEM Part number: 34521372)
+18 Component X: Pressure sensor coupled with an LED (OEM Part number: 34521372)
 
 
 Functions Of The Subsytems:
