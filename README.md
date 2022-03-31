@@ -10,6 +10,26 @@ Subsystems:
 
 I have written the code in C to test each of these subsystems using Arduino Uno.
 
+Items needed:
+1 Stepper motor (28BYJ48)
+2 L293DNE Motor Driver IC
+3 Alphanumeric 2x16 LCD
+4 9V Battery strap
+5 Optical block
+6 Pin jumper wire (male-to-male)
+7 Single core jumper wire
+8 Breadboard
+9 UNO board with USB cable
+10 Pushbutton
+11 Trim pot
+12 330Ω Resistor
+13 1KΩ Resistor
+14 5.6KΩ Resistor
+15 10KΩ Resistor
+16 Crocodile clips
+17 LEDs
+18 Pressure sensor coupled with an LED (OEM Part number: 34521372)
+
 
 Functions Of The Subsytems:
 1. User Interface: Control panel (via push button & LCD)
