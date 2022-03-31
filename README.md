@@ -104,4 +104,4 @@ All About Component X:
 - Made of pressure sensor & LED
 - Programmed such that when it is pressed (pressure is applied onto sensor), the LED turns off
 - Mimics the detection of insertion of tubing into infusion pump, to detect when it has been inserted and if it has been done so properly
-Red wire (Pin 1) to 5V, White wire (Pin 4) to GND, Black wire (Pin 3) to pressure sensor & the other White wire (Pin 2) to LED.
+-Red wire (Pin 1) to 5V, White wire (Pin 4) to GND, Black wire (Pin 3) to pressure sensor & the other White wire (Pin 2) to LED.
