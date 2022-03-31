@@ -49,6 +49,8 @@ Items needed:
 18 Component X: Pressure sensor coupled with an LED (OEM Part number: 34521372)
 
 
+
+
 Functions Of The Subsytems:
 1. User Interface: Control panel (via push button & LCD)
 - The LCD screen simulates the LCD screen on the original infusion pump.
@@ -60,6 +62,9 @@ Functions Of The Subsytems:
 
 3. Action Element: Stepper motor and Driver
 - Simulates the stepper motor and its driver within the infusion pump after the door has been closed. The stepper motor controls the peristaltic fingers (multiple rollers compressing the tube), which enable/control pumping motion and downstream flow. The motor allows user to precisely control the peristaltic pump speed and direction. This gives greater controllability & accuracy.
+
+
+
 
 
 Step-by-Step Testing Instruction of Subsystems: (Refer to the code comments and Flowchart if necessary)
@@ -77,11 +82,20 @@ Step-by-Step Testing Instruction of Subsystems: (Refer to the code comments and 
 - Lastly, when optical sensor is unblocked, it senses that again (State > 800). The controller sends signals to the motor driver to drive the stepper motor. The stepper motor then starts running, meaning it works properly. We set only 1 motor pin "HIGH" at a time. We also included a time delay. This would be repeated in the code until all the 4 motor pins are turned "HIGH" sequentially. (If optical sensor is blocked again, motor stops and LCD prompts user to “unblk optical sensor” again.) The status of the button is read again to see if the motor is stopped by the user. If it is not, stepper motor continues running. This continues until the user presses the button (User Interface), which would stop the stepper motor from running and cause the LCD to display “END”.
 
 
+
+
+
+
 For Component X, we use Digital Read for LED and Analog Read for pressure/force sensor because….
 
 digitalRead() reads the value from a specified digital pin, either HIGH or LOW (or binary values of 1 and 0). Its application can be used in ascertaining whether an LED is on or a push button is engaged. LED & push buttons only have 2 states (On/Off, 1/0, etc.)
 
 The only pins you can analogRead() on are those with a preceding 'A': A0, A1, A2, and A3. Instead of simply returning HIGH or LOW, analogRead() returns a number between 0 and 1023 -- 1024 possible analog values. An output of 0 equates to 0V, and 1023 means the pin reads 5V. They cover a wide range of values. As opposed to having only 2 states for digital, analogs possess multiple states and can have many possibilities. So, for our pressure sensor (it doesn’t just have 2 states HIGH and LOW), it has a range of values when pressed/released, we would need to use the analog input to monitor the changes in pressure.
+
+
+
+
+
 
 All About Component X:
 - Made of pressure sensor & LED
