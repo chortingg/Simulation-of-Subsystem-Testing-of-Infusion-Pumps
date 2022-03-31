@@ -49,6 +49,8 @@ Items needed:
 
 18 Component X: Pressure sensor coupled with an LED (OEM Part number: 34521372)
 
+19 Arduino IDE
+
 
 
 
