@@ -54,7 +54,7 @@ Functions Of The Subsytems:
 - The LCD screen simulates the LCD screen on the original infusion pump.
 - The push button simulates the START/STOP buttons in the user interface of the infusion pump.
 
-2. Feedback Element: Optical Sensor and Component X
+2. Feedback Element: Optical Sensor and Component X (which is the pressure sensor + LED)
 - Optical Sensor simulates that of the original infusion pump to detect if the door of the infusion pump has been closed.
 - Component X simulates the yellow LED light on the infusion pump and the pressure sensor to detect if the tubing has been inserted into the pump. If it is inserted, the pressure sensor  senses this and LED switches off.
 
@@ -69,7 +69,7 @@ Step-by-Step Testing Instruction of Subsystems: (Refer to the code comments and 
 - When user presses the button (button’s status is read as HIGH), LCD screen should display “Block the Optical Sensor!” (As shown in the void loop). This tests for the button and ensures it is working properly, & correctly connected to LCD.
 (At the very end, the same push button also stops the stepper motor from moving. So, only one button is used throughout the whole procedure. This means less confusion as we do not have to differentiate between different buttons.)
 
-2. Feedback Element: Optical Sensor and Component X (which is the pressure sensor + LED)
+2. Feedback Element: Optical Sensor and Component X 
 - Next, when user blocks optical sensor with an opaque object, it would detect this (State drops from >800 to <100) & send signals back to display “Door Opened” & “Comp X LED on” on LCD. LED of Component X lights up. This means optical sensor is working properly & senses the decrease in intensity of light. (If the blockage is lifted away from the optical sensor (State is > 800), it similarly detects this & continue to prompt user to block optical sensor again.)
 - User must press the pressure sensor on Component X to switch off LED on the Component X. Once pressed, pressure sensor detects the change (StateX > 200), & sends signals back. LCD displays “Comp X LED Off” and “Unblk Opt Sensor”, prompting user to unblock the optical sensor. This ensures Component X works properly and tests if it senses pressure.
 
