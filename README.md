@@ -6,3 +6,6 @@ Subsystems:
 - User interface: Control panel (via push buttons) and LCD.
 - Action element: Stepper motor and driver.
 - Feedback element: Optical sensor, pressure sensor with LED.
+
+
+I have written the code in C to test each of these subsystems.
