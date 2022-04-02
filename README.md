@@ -1,6 +1,6 @@
 # Simulation-of-Subsystem-Testing-of-Infusion-Pumps
 
-As part of a Clinical Engineering Project, I was tasked to develop a Standard operating procedure (SOP) to test the various subsystems of the B. Braun Infusomat Space infusion pump to facilitate a more rapid functionality check (i.e., productivity improvement).
+As part of a Clinical Engineering Project, I developed a Standard operating procedure (SOP) to test the various subsystems of the B. Braun Infusomat Space infusion pump to facilitate a more rapid functionality check (i.e., productivity improvement).
 
 Subsystems:
 - User interface: Control panel (via push buttons) and LCD.
@@ -8,7 +8,7 @@ Subsystems:
 - Feedback element: Optical sensor, pressure sensor with LED.
 
 
-I have written the code in C to test each of these subsystems using Arduino Uno. Link to video demonstration of testing: https://youtu.be/zzs-VEquVlk
+The code is written in C to test each of these subsystems using Arduino Uno. Link to video demonstration of testing: https://youtu.be/zzs-VEquVlk
 
 
 Items needed:
