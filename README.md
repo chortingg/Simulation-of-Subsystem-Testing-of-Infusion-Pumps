@@ -8,7 +8,7 @@ Subsystems:
 - Feedback element: Optical sensor, pressure sensor with LED.
 
 
-The code is written in C to test each of these subsystems using Arduino Uno. Link to video demonstration of testing: https://youtu.be/zzs-VEquVlk
+The code is written in C to test each of these subsystems with the use of Arduino Uno. Link to video demonstration of testing: https://youtu.be/zzs-VEquVlk
 
 
 Items needed:
